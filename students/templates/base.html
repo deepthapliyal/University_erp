@@ -1,0 +1,27 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Your Website{% endblock %}</title>
+   
+</head>
+<body>
+    <header>
+        <h1>Your University ERP</h1>
+        <!-- Add navigation links if needed -->
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your University ERP. All rights reserved.</p>
+    </footer>
+    <!-- Add more footer content if needed -->
+
+    <!-- Add scripts or other elements at the end if needed -->
+</body>
+</html>
